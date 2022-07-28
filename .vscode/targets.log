@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 28 20:03:33 2022
+# Make data base, printed on Thu Jul 28 22:47:34 2022
 
 # Variables
 
@@ -21,7 +21,7 @@ USERPROFILE = C:\Users\lingg
 # environment
 LOCALAPPDATA = C:\Users\lingg\AppData\Local
 # environment
-VSCODE_CWD = C:\WINDOWS\system32
+VSCODE_CWD = C:\Users\lingg\AppData\Local\Programs\Microsoft VS Code
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -37,7 +37,7 @@ GOPATH = C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20784_EHIUIMAYYYZZUBHM
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16752_RIIYQHAGHNAYDJAU
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -85,7 +85,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 20784
+VSCODE_PID = 16752
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -209,7 +209,7 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1658876491): 14 files, no impossibilities.
+# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1659017310): 14 files, no impossibilities.
 
 # 14 files, no impossibilities in 1 directories.
 
@@ -224,13 +224,13 @@ migratedown:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
+#  recipe to execute (from 'Makefile', line 17):
 	migrate -path db/migration -database "postgresql://root:secret@localhost:5454/simple_bank?sslmode=disable" -verbose down
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-27 06:01:21
+#  Last modified 2022-07-28 21:08:58
 #  File has been updated.
 #  Successfully updated.
 
@@ -239,7 +239,7 @@ mock:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 26):
+#  recipe to execute (from 'Makefile', line 32):
 	mockgen -destination db/mock/store.go github.com/LinggaWahyu/Golang-Simple-Bank/db/sqlc Store
 
 dropdb:
@@ -250,12 +250,20 @@ dropdb:
 #  recipe to execute (from 'Makefile', line 8):
 	docker exec -it postgres12 dropdb simple_bank
 
+migratedown1:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	migrate -path db/migration -database "postgresql://root:secret@localhost:5454/simple_bank?sslmode=disable" -verbose down 1
+
 server:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 23):
+#  recipe to execute (from 'Makefile', line 29):
 	go run main.go
 
 migrateup:
@@ -284,7 +292,7 @@ test:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 20):
+#  recipe to execute (from 'Makefile', line 26):
 	go test -v -cover ./...
 
 sqlc:
@@ -292,8 +300,16 @@ sqlc:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 17):
+#  recipe to execute (from 'Makefile', line 23):
 	sqlc generate
+
+migrateup1:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 14):
+	migrate -path db/migration -database "postgresql://root:secret@localhost:5454/simple_bank?sslmode=disable" -verbose up 1
 
 postgres:
 #  Phony target (prerequisite of .PHONY).
@@ -311,25 +327,25 @@ createdb:
 #  recipe to execute (from 'Makefile', line 5):
 	docker exec -it postgres12 createdb --username=root --owner=root simple_bank
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test server mock
+.PHONY: postgres createdb dropdb migrateup migratedown migrateup1 migratedown1 sqlc test server mock
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=1/33=3%
+# Load=16/1024=2%, Rehash=0, Collisions=1/37=3%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 186 B / avg = 6 B
-# current buf: size = 8174 B / used = 186 B / count = 27 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 29 / storage = 210 B / avg = 7 B
+# current buf: size = 8174 B / used = 210 B / count = 29 / avg = 7 B
 
-# strcache performance: lookups = 50 / hit rate = 46%
+# strcache performance: lookups = 56 / hit rate = 48%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=0/50=0%
-# Finished Make data base on Thu Jul 28 20:03:33 2022
+# Load=29/8192=0%, Rehash=0, Collisions=0/56=0%
+# Finished Make data base on Thu Jul 28 22:47:34 2022
 
  
