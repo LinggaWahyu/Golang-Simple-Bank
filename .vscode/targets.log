@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jul 27 05:59:22 2022
+# Make data base, printed on Thu Jul 28 20:03:33 2022
 
 # Variables
 
@@ -21,7 +21,7 @@ USERPROFILE = C:\Users\lingg
 # environment
 LOCALAPPDATA = C:\Users\lingg\AppData\Local
 # environment
-VSCODE_CWD = C:\WINDOWS\System32
+VSCODE_CWD = C:\WINDOWS\system32
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -37,7 +37,7 @@ GOPATH = C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1264_AFJPLGFWKMVEJXYH
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20784_EHIUIMAYYYZZUBHM
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -85,7 +85,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 1264
+VSCODE_PID = 20784
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -209,7 +209,7 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1658842695): 14 files, no impossibilities.
+# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1658876491): 14 files, no impossibilities.
 
 # 14 files, no impossibilities in 1 directories.
 
@@ -230,9 +230,17 @@ migratedown:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-26 12:07:07
+#  Last modified 2022-07-27 06:01:21
 #  File has been updated.
 #  Successfully updated.
+
+mock:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 26):
+	mockgen -destination db/mock/store.go github.com/LinggaWahyu/Golang-Simple-Bank/db/sqlc Store
 
 dropdb:
 #  Phony target (prerequisite of .PHONY).
@@ -303,25 +311,25 @@ createdb:
 #  recipe to execute (from 'Makefile', line 5):
 	docker exec -it postgres12 createdb --username=root --owner=root simple_bank
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test server
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test server mock
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/31=0%
+# Load=14/1024=1%, Rehash=0, Collisions=1/33=3%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 181 B / avg = 6 B
-# current buf: size = 8174 B / used = 181 B / count = 26 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 186 B / avg = 6 B
+# current buf: size = 8174 B / used = 186 B / count = 27 / avg = 6 B
 
-# strcache performance: lookups = 47 / hit rate = 44%
+# strcache performance: lookups = 50 / hit rate = 46%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=0/47=0%
-# Finished Make data base on Wed Jul 27 05:59:22 2022
+# Load=27/8192=0%, Rehash=0, Collisions=0/50=0%
+# Finished Make data base on Thu Jul 28 20:03:33 2022
 
  
