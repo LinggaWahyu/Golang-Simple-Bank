@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 28 22:47:34 2022
+# Make data base, printed on Fri Jul 29 11:12:55 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -21,7 +23,7 @@ USERPROFILE = C:\Users\lingg
 # environment
 LOCALAPPDATA = C:\Users\lingg\AppData\Local
 # environment
-VSCODE_CWD = C:\Users\lingg\AppData\Local\Programs\Microsoft VS Code
+VSCODE_CWD = C:\WINDOWS\system32
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -37,7 +39,9 @@ GOPATH = C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16752_RIIYQHAGHNAYDJAU
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_19012_KXBTMZBSOREBVVBU
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -85,7 +89,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 16752
+VSCODE_PID = 19012
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -201,7 +205,7 @@ PROCESSOR_REVISION = 6801
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
-# Load=94/1024=9%, Rehash=0, Collisions=8/121=7%
+# Load=96/1024=9%, Rehash=0, Collisions=9/123=7%
 
 # Pattern-specific Variable Values
 
@@ -209,9 +213,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1659017310): 14 files, no impossibilities.
+# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1659067975): 15 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -340,12 +344,12 @@ createdb:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 29 / storage = 210 B / avg = 7 B
-# current buf: size = 8174 B / used = 210 B / count = 29 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 30 / storage = 216 B / avg = 7 B
+# current buf: size = 8174 B / used = 216 B / count = 30 / avg = 7 B
 
-# strcache performance: lookups = 56 / hit rate = 48%
+# strcache performance: lookups = 57 / hit rate = 47%
 # hash-table stats:
-# Load=29/8192=0%, Rehash=0, Collisions=0/56=0%
-# Finished Make data base on Thu Jul 28 22:47:34 2022
+# Load=30/8192=0%, Rehash=0, Collisions=0/57=0%
+# Finished Make data base on Fri Jul 29 11:12:55 2022
 
  
