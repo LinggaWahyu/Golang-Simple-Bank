@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 29 11:12:55 2022
+# Make data base, printed on Sun Jul 31 13:06:41 2022
 
 # Variables
 
@@ -39,7 +39,7 @@ GOPATH = C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_19012_KXBTMZBSOREBVVBU
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8452_AYQTZYYMYGRGDVGC
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -89,7 +89,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 19012
+VSCODE_PID = 8452
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -350,6 +350,6 @@ createdb:
 # strcache performance: lookups = 57 / hit rate = 47%
 # hash-table stats:
 # Load=30/8192=0%, Rehash=0, Collisions=0/57=0%
-# Finished Make data base on Fri Jul 29 11:12:55 2022
+# Finished Make data base on Sun Jul 31 13:06:41 2022
 
  
