@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 01 19:29:50 2022
+# Make data base, printed on Tue Aug 02 08:15:52 2022
 
 # Variables
 
@@ -39,7 +39,7 @@ GOPATH = C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_964_OUIZCGYRPQGNLRMW
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13372_CKFRFACCNGFOGIPN
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -89,7 +89,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 964
+VSCODE_PID = 13372
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -213,9 +213,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1659258471): 15 files, no impossibilities.
+# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1659358237): 16 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 16 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -344,12 +344,12 @@ createdb:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 30 / storage = 216 B / avg = 7 B
-# current buf: size = 8174 B / used = 216 B / count = 30 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 227 B / avg = 7 B
+# current buf: size = 8174 B / used = 227 B / count = 31 / avg = 7 B
 
-# strcache performance: lookups = 57 / hit rate = 47%
+# strcache performance: lookups = 58 / hit rate = 46%
 # hash-table stats:
-# Load=30/8192=0%, Rehash=0, Collisions=0/57=0%
-# Finished Make data base on Mon Aug 01 19:29:50 2022
+# Load=31/8192=0%, Rehash=0, Collisions=0/58=0%
+# Finished Make data base on Tue Aug 02 08:15:52 2022
 
  
