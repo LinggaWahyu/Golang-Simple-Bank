@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Aug 02 11:35:42 2022
+# Make data base, printed on Tue Sep 06 17:19:37 2022
 
 # Variables
 
@@ -21,7 +21,7 @@ USERPROFILE = C:\Users\lingg
 # environment
 LOCALAPPDATA = C:\Users\lingg\AppData\Local
 # environment
-VSCODE_CWD = C:\WINDOWS\system32
+VSCODE_CWD = C:\WINDOWS\System32
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -37,7 +37,7 @@ GOPATH = C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3416_ECUNKTCSLSNOCUPZ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_22404_YKGNYBEZRGJIUFHI
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -49,7 +49,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\lingg\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = C:\Users\lingg\AppData\Roaming\Code\CachedData\784b0177c56c607789f9638da7b6bf3230d47a8c
 # environment
 LANG = C
 # default
@@ -85,7 +85,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 3416
+VSCODE_PID = 22404
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -117,7 +117,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files\Go\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-7.4.19-Win32-vc15-x64;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\lingg\scoop\shims;C:\Users\lingg\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\lingg\AppData\Local\Programs\Python\Python310\;C:\Users\lingg\AppData\Local\Microsoft\WindowsApps;C:\Users\lingg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lingg\go\bin;C:\Users\lingg\AppData\Roaming\Composer\vendor\bin;C:\Users\lingg\AppData\Roaming\npm;C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang\bin;C:\Program Files\PostgreSQL\9.6\bin;C:\Program Files\PostgreSQL\9.6\lib;
+PATH = C:\Program Files\Go\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-7.4.19-Win32-vc15-x64;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\lingg\scoop\shims;C:\Users\lingg\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\lingg\AppData\Local\Programs\Python\Python310\;C:\Users\lingg\AppData\Local\Microsoft\WindowsApps;C:\Users\lingg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lingg\go\bin;C:\Users\lingg\AppData\Roaming\Composer\vendor\bin;C:\Users\lingg\AppData\Roaming\npm;C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang\bin;C:\Program Files\PostgreSQL\9.6\bin;C:\Program Files\PostgreSQL\9.6\lib;C:\Program Files\OpenSSL\bin;
 # environment
 COMPUTERNAME = LAPTOP-319IKHE9
 # default
@@ -126,6 +126,8 @@ MAKEFILES :=
 ^F = $(notdir $^)
 # environment
 PROMPT = $P$G
+# environment
+OPENSSL_CONF = C:\Program Files\OpenSSL\bin\openssl.cnf
 # environment
 CHOCOLATEYLASTPATHUPDATE = 133026910512306451
 # environment
@@ -181,7 +183,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\lingg\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\b01b2747f76a61ffe866faba7568ae16-1.69.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\b01b2747f76a61ffe866faba7568ae16-1.71.0-main-sock
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -201,7 +203,7 @@ PROCESSOR_REVISION = 6801
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
-# Load=94/1024=9%, Rehash=0, Collisions=8/121=7%
+# Load=95/1024=9%, Rehash=0, Collisions=8/122=7%
 
 # Pattern-specific Variable Values
 
@@ -209,9 +211,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1659413361): 18 files, no impossibilities.
+# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1659715037): 19 files, no impossibilities.
 
-# 18 files, no impossibilities in 1 directories.
+# 19 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -230,7 +232,7 @@ migratedown:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-02 08:41:07
+#  Last modified 2022-08-05 22:05:42
 #  File has been updated.
 #  Successfully updated.
 
@@ -340,13 +342,12 @@ createdb:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 33 / storage = 256 B / avg = 7 B
-# current buf: size = 8174 B / used = 256 B / count = 33 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 34 / storage = 268 B / avg = 7 B
+# current buf: size = 8174 B / used = 268 B / count = 34 / avg = 7 B
 
-# strcache performance: lookups = 60 / hit rate = 45%
+# strcache performance: lookups = 61 / hit rate = 44%
 # hash-table stats:
-# L 
-oad=33/8192=0%, Rehash=0, Collisions=0/60=0%
-# Finished Make data base on Tue Aug 02 11:35:42 2022
+# Load=34/8192=0%, Rehash=0, Collisions=0/61=0%
+# Finished Make data base on Tue Sep 06 17:19:37 2022
 
  
