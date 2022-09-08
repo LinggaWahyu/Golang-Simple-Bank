@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Sep 06 17:19:37 2022
+# Make data base, printed on Thu Sep 08 21:35:03 2022
 
 # Variables
 
@@ -37,7 +37,7 @@ GOPATH = C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_22404_YKGNYBEZRGJIUFHI
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11544_INXLJYJHODPEBHFH
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -85,7 +85,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 22404
+VSCODE_PID = 11544
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -211,7 +211,7 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1659715037): 19 files, no impossibilities.
+# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1662460984): 19 files, no impossibilities.
 
 # 19 files, no impossibilities in 1 directories.
 
@@ -348,6 +348,6 @@ createdb:
 # strcache performance: lookups = 61 / hit rate = 44%
 # hash-table stats:
 # Load=34/8192=0%, Rehash=0, Collisions=0/61=0%
-# Finished Make data base on Tue Sep 06 17:19:37 2022
+# Finished Make data base on Thu Sep 08 21:35:03 2022
 
  
