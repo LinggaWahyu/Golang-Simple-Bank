@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep 08 21:35:03 2022
+# Make data base, printed on Sun Sep 11 16:55:57 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -21,7 +23,7 @@ USERPROFILE = C:\Users\lingg
 # environment
 LOCALAPPDATA = C:\Users\lingg\AppData\Local
 # environment
-VSCODE_CWD = C:\WINDOWS\System32
+VSCODE_CWD = C:\Users\lingg\AppData\Local\Programs\Microsoft VS Code
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -37,7 +39,9 @@ GOPATH = C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11544_INXLJYJHODPEBHFH
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16288_WNHIGZVKVXUIKPFQ
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -85,7 +89,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 11544
+VSCODE_PID = 16288
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -117,11 +121,13 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files\Go\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-7.4.19-Win32-vc15-x64;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\lingg\scoop\shims;C:\Users\lingg\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\lingg\AppData\Local\Programs\Python\Python310\;C:\Users\lingg\AppData\Local\Microsoft\WindowsApps;C:\Users\lingg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lingg\go\bin;C:\Users\lingg\AppData\Roaming\Composer\vendor\bin;C:\Users\lingg\AppData\Roaming\npm;C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang\bin;C:\Program Files\PostgreSQL\9.6\bin;C:\Program Files\PostgreSQL\9.6\lib;C:\Program Files\OpenSSL\bin;
+PATH = C:\Program Files\Go\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\laragon\bin\php\php-7.4.19-Win32-vc15-x64;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\lingg\protoc-21.5-win64\bin;C:\Users\lingg\scoop\shims;C:\Users\lingg\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\lingg\AppData\Local\Programs\Python\Python310\;C:\Users\lingg\AppData\Local\Microsoft\WindowsApps;C:\Users\lingg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lingg\go\bin;C:\Users\lingg\AppData\Roaming\Composer\vendor\bin;C:\Users\lingg\AppData\Roaming\npm;C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang\bin;C:\Program Files\PostgreSQL\9.6\bin;C:\Program Files\PostgreSQL\9.6\lib;C:\Program Files\OpenSSL\bin;C:\Users\lingg\protoc-21.5-win64\bin;
 # environment
 COMPUTERNAME = LAPTOP-319IKHE9
 # default
 MAKEFILES := 
+# makefile (from 'Makefile', line 1)
+DB_URL = postgresql://root:secret@localhost:5454/simple_bank?sslmode=disable
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -203,7 +209,7 @@ PROCESSOR_REVISION = 6801
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
-# Load=95/1024=9%, Rehash=0, Collisions=8/122=7%
+# Load=98/1024=10%, Rehash=0, Collisions=9/125=7%
 
 # Pattern-specific Variable Values
 
@@ -211,9 +217,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1662460984): 19 files, no impossibilities.
+# . (key c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL, mtime 1662865189): 26 files, no impossibilities.
 
-# 19 files, no impossibilities in 1 directories.
+# 26 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -226,22 +232,44 @@ migratedown:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 17):
-	migrate -path db/migration -database "postgresql://root:secret@localhost:5454/simple_bank?sslmode=disable" -verbose down
+#  recipe to execute (from 'Makefile', line 19):
+	migrate -path db/migration -database "$(DB_URL)" -verbose down
+
+proto:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 43):
+	del .\pb\*.go
+	del .\doc\swagger\*.swagger.json
+	protoc --proto_path=proto --go_out=pb --go_opt=paths=source_relative \
+    --go-grpc_out=pb --go-grpc_opt=paths=source_relative \
+	--grpc-gateway_out=pb --grpc-gateway_opt paths=source_relative \
+	--openapiv2_out=doc/swagger --openapiv2_opt=allow_merge=true,merge_file_name=simple_bank \
+    proto/*.proto
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-05 22:05:42
+#  Last modified 2022-09-11 15:47:30
 #  File has been updated.
 #  Successfully updated.
+
+evans:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 52):
+	evans --host localhost --port 9090 -r repl
 
 mock:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 32):
+#  recipe to execute (from 'Makefile', line 40):
 	mockgen -destination db/mock/store.go github.com/LinggaWahyu/Golang-Simple-Bank/db/sqlc Store
 
 dropdb:
@@ -249,7 +277,7 @@ dropdb:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
+#  recipe to execute (from 'Makefile', line 10):
 	docker exec -it postgres12 dropdb simple_bank
 
 migratedown1:
@@ -257,15 +285,15 @@ migratedown1:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 20):
-	migrate -path db/migration -database "postgresql://root:secret@localhost:5454/simple_bank?sslmode=disable" -verbose down 1
+#  recipe to execute (from 'Makefile', line 22):
+	migrate -path db/migration -database "$(DB_URL)" -verbose down 1
 
 server:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 29):
+#  recipe to execute (from 'Makefile', line 37):
 	go run main.go
 
 migrateup:
@@ -273,8 +301,15 @@ migrateup:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
-	migrate -path db/migration -database "postgresql://root:secret@localhost:5454/simple_bank?sslmode=disable" -verbose up
+#  recipe to execute (from 'Makefile', line 13):
+	migrate -path db/migration -database "$(DB_URL)" -verbose up
+
+db_schema:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 28):
+	dbml2sql --postgres -o doc/schema.sql doc/db.dbml
 
 # Not a target:
 .DEFAULT:
@@ -294,7 +329,7 @@ test:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 26):
+#  recipe to execute (from 'Makefile', line 34):
 	go test -v -cover ./...
 
 sqlc:
@@ -302,7 +337,7 @@ sqlc:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 23):
+#  recipe to execute (from 'Makefile', line 31):
 	sqlc generate
 
 migrateup1:
@@ -310,15 +345,23 @@ migrateup1:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
-	migrate -path db/migration -database "postgresql://root:secret@localhost:5454/simple_bank?sslmode=disable" -verbose up 1
+#  recipe to execute (from 'Makefile', line 16):
+	migrate -path db/migration -database "$(DB_URL)" -verbose up 1
+
+db_docs:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	dbdocs build doc/db.dbml
 
 postgres:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
+#  recipe to execute (from 'Makefile', line 4):
 	docker run --name postgres12 --network bank-network -p 5454:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres
 
 createdb:
@@ -326,28 +369,28 @@ createdb:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
+#  recipe to execute (from 'Makefile', line 7):
 	docker exec -it postgres12 createdb --username=root --owner=root simple_bank
 
-.PHONY: postgres createdb dropdb migrateup migratedown migrateup1 migratedown1 sqlc test server mock
+.PHONY: postgres createdb dropdb migrateup migratedown migrateup1 migratedown1 db_docs sqlc test server mock proto evans
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=16/1024=2%, Rehash=0, Collisions=1/37=3%
+# Load=20/1024=2%, Rehash=0, Collisions=1/44=2%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 34 / storage = 268 B / avg = 7 B
-# current buf: size = 8174 B / used = 268 B / count = 34 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 44 / storage = 342 B / avg = 7 B
+# current buf: size = 8174 B / used = 342 B / count = 44 / avg = 7 B
 
-# strcache performance: lookups = 61 / hit rate = 44%
+# strcache performance: lookups = 79 / hit rate = 44%
 # hash-table stats:
-# Load=34/8192=0%, Rehash=0, Collisions=0/61=0%
-# Finished Make data base on Thu Sep 08 21:35:03 2022
+# Load=44/8192=1%, Rehash=0, Collisions=0/79=0%
+# Finished Make data base on Sun Sep 11 16:55:57 2022
 
  
