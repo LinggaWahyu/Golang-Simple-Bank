@@ -1,6 +1,6 @@
 module github.com/LinggaWahyu/Golang-Simple-Bank
 
-go 1.18
+go 1.19
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
