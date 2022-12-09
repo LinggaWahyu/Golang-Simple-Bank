@@ -6,7 +6,6 @@ import (
 	"time"
 
 	"github.com/rs/zerolog/log"
-
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
@@ -65,7 +64,7 @@ func HttpLogger(handler http.Handler) http.Handler {
 			ResponseWriter: res,
 			StatusCode:     http.StatusOK,
 		}
-		handler.ServeHTTP(res, req)
+		handler.ServeHTTP(rec, req)
 		duration := time.Since(startTime)
 
 		logger := log.Info()
