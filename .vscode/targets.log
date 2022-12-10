@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Dec 09 18:42:03 2022
+# Make data base, printed on Sat Dec 10 09:35:53 2022
 
 # Variables
 
@@ -37,7 +37,7 @@ GOPATH = C:\Users\lingg\Downloads\tugas\Semangat Belajar\Go-Lang
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_13248_KZDDCXCZITARNYSS
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_23172_DHDNIIIXHFQUZZIH
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -85,7 +85,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 13248
+VSCODE_PID = 23172
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -239,7 +239,8 @@ proto:
 #  recipe to execute (from 'Makefile', line 43):
 	del .\pb\*.go
 	del .\doc\swagger\*.swagger.json
-	protoc --proto_path=proto --go_out=pb --go_opt=paths=source_relative \
+	protoc --proto_path=proto --go_out=pb --go_opt 
+=paths=source_relative \
     --go-grpc_out=pb --go-grpc_opt=paths=source_relative \
 	--grpc-gateway_out=pb --grpc-gateway_opt paths=source_relative \
 	--openapiv2_out=doc/swagger --openapiv2_opt=allow_merge=true,merge_file_name=simple_bank \
@@ -388,6 +389,6 @@ createdb:
 # strcache performance: lookups = 80 / hit rate = 43%
 # hash-table stats:
 # Load=45/8192=1%, Rehash=0, Collisions=0/80=0%
-# Finished Make data base on Fri Dec 09 18:42:03 2022
+# Finished Make data base on Sat Dec 10 09:35:53 2022
 
  
