@@ -1,5 +1,0 @@
-make.exe --dry-run --always-make --keep-going --print-directory
-make: Entering directory 'c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL'
-docker run --name postgres12 --network bank-network -p 5454:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres
-make: Leaving directory 'c:/Users/lingg/Downloads/tugas/Semangat Belajar/Go-Lang/src/simplebank_postgreSQL'
- 
