@@ -40,7 +40,8 @@ server:
 	go run main.go
 
 mock:
-	mockgen -destination db/mock/store.go github.com/LinggaWahyu/Golang-Simple-Bank/db/sqlc Store
+	mockgen -package mockdb -destination db/mock/store.go github.com/LinggaWahyu/Golang-Simple-Bank/db/sqlc Store
+	mockgen -package mockwk -destination worker/mock/distributor.go github.com/LinggaWahyu/Golang-Simple-Bank/worker TaskDistributor
 
 proto:
 	rm -f pb/*.go
